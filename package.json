@@ -1,0 +1,18 @@
+{
+  "name": "blessedmortals",
+  "version": "1.0.0",
+  "description": "API wrapper for Blight of the Immortals",
+  "main": "blessed.js",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "conf": "^3.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Hartvigsen",
+  "license": "ISC"
+}
