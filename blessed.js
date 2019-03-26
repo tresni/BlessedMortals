@@ -19,7 +19,7 @@ class BlessedMortal {
                 alias: username,
                 password: password
             }
-        }).then((result) => {
+        }).then(result => {
             if (result[0] != 'server:login_success') {
                 throw result[0];
             }
@@ -34,7 +34,7 @@ class BlessedMortal {
             form: {
                 type: 'init_account'
             }
-        }).then(function(result) {
+        }).then(result => {
             if (result[0] != 'server:init_account') {
                 throw 'unable to init account';
             }
@@ -56,7 +56,7 @@ class BlessedMortal {
                 game_number: game,
                 build_number: this.build
             }
-        }).then((result) => {
+        }).then(result => {
             if (result.event == 'order:error') {
                 throw result.report;
             }
@@ -67,14 +67,14 @@ class BlessedMortal {
 
     universeReport(game) {
         return this._order(game, 'full_universe_report', 0)
-            .catch((e) => {
+            .catch(e => {
                 throw "Invalid Universe Report";
             });
     }
 
     togglePauseGame(game, age) {
         return this._order(game, 'toggle_pause_game', age)
-            .catch((e) => {
+            .catch(e => {
                 throw "Invalid Pause Game";
             });
     }

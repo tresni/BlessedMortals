@@ -61,7 +61,7 @@ bm.login(commander.username, commander.password)
                 }
             });
     })
-    .catch((e) => {
+    .catch(e => {
         error(e);
         process.exit(1);
     })
