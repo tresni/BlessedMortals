@@ -34,7 +34,7 @@ class BlessedMortal {
             form: {
                 type: 'init_account'
             }
-        }).then(result => {
+        }).then(function (result) {
             if (result[0] != 'server:init_account') {
                 throw 'unable to init account';
             }
